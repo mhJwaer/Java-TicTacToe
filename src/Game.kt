@@ -185,10 +185,7 @@ class Game(var gridSize: Int) {
                     meat += " | " + grid[gridSize * (row - 1) + (i - 1)]!!.output()
                 }
             }
-            map += """
-                $meat
-                $fill
-                """.trimIndent()
+            map += meat + "\n" + fill
         }
         return map
     }
